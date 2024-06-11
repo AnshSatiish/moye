@@ -96,3 +96,68 @@ nav ul li a {
     height: auto;
     border-radius: 10px;
 }
+
+.partners {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.partners h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-logos img {
+    margin: 0 10px;
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    background-color: #1A1A1A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+footer .contact, footer .follow {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+footer .contact h2, footer .follow h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer .contact p, footer .follow p {
+    margin: 5px 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
