@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -37,6 +35,19 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
+}
+
+nav .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 4px 0;
 }
 
 .hero {
@@ -111,12 +122,13 @@ nav ul li a {
 
 .partner-logos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .partner-logos img {
-    margin: 0 10px;
+    margin: 10px;
     width: 150px;
     height: auto;
 }
@@ -160,4 +172,61 @@ footer .social-icons a {
 footer .social-icons img {
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav .menu-toggle {
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        max-width: 100%;
+    }
+
+    .partners h2 {
+        font-size: 28px;
+    }
+
+    .partner-logos {
+        flex-direction: column;
+    }
+
+    .partner-logos img {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
