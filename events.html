@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - MatchUp</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .accordion {
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            margin-bottom: 10px;
+        }
+
+        .active, .accordion:hover {
+            background-color: #555;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            color: black;
+        }
+
+        .panel img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MatchUp</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="events" class="events-section">
+        <h1>Upcoming Events</h1>
+        <button class="accordion">Football 1v1 Tournament</button>
+        <div class="panel">
+            <p>Join us for an exciting football 1v1 tournament. Showcase your skills and compete against the best.</p>
+            <p><strong>Date:</strong> July 20, 2024</p>
+            <p><strong>Venue:</strong> Abidjan Sports Complex</p>
+            <img src="images/football.jpg" alt="Football 1v1">
+        </div>
+
+        <button class="accordion">Basketball Tournament</button>
+        <div class="panel">
+            <p>Get ready for a thrilling basketball tournament. Form your team and compete for the championship.</p>
+            <p><strong>Date:</strong> August 15, 2024</p>
+            <p><strong>Venue:</strong> Abidjan Basketball Arena</p>
+            <img src="images/basketball.jpg" alt="Basketball Tournament">
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact">
+            <h2>CONTACT</h2>
+            <p>example@example.com</p>
+        </div>
+        <div class="follow">
+            <h2>FOLLOW</h2>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook" height="100px" width="100px"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram" height="100px" width="100px"></a>
+                <a href="#"><img src="images/x.png" alt="Twitter" height="100px" width="100px"></a>
+                <a href="#"><img src="images/discord.png" alt="Discord" height="100px" width="100px"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.getElementById('menu');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        const acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MatchUp</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-section {
+            padding: 50px 20px;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .about-section h1 {
+            margin-bottom: 40px;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .about-content h2 {
+            margin-top: 30px;
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MatchUp</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="index.html#partners">Partners</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <h1>About Us</h1>
+        <div class="about-content">
+            <h2>Welcome to MatchUp</h2>
+            <p>Welcome to <strong>MatchUp</strong>, the premier sports app dedicated to revolutionizing the way scouting is done in Abidjan. Our innovative platform connects talented players with scouts, coaches, and teams, creating unparalleled opportunities for athletes to showcase their skills and achieve their dreams.</p>
+            
+            <h2>Our Mission</h2>
+            <p>At <strong>MatchUp</strong>, our mission is simple: to discover and nurture athletic talent in Abidjan. We believe that every player deserves a chance to shine, and we are committed to providing the tools and resources needed to make that happen. Our platform is designed to offer in-depth game analysis, revolutionary PUG technology, and a dynamic network of scouts and coaches, all working together to elevate the sports community.</p>
+            
+            <h2>Why Choose MatchUp?</h2>
+            <p><strong>Cutting-Edge Technology:</strong> Our app features state-of-the-art game analysis and PUG technology that provides detailed insights into player performance.</p>
+            <p><strong>Scouting Opportunities:</strong> We connect players with scouts and coaches, opening doors to new opportunities and career advancements.</p>
+            <p><strong>Community Building:</strong> We foster a strong community of players, coaches, and scouts, creating an environment that encourages growth and development.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact">
+            <h2>CONTACT</h2>
+            <p>example@example.com</p>
+        </div>
+        <div class="follow">
+            <h2>FOLLOW</h2>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook" height="100px" width="100px"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram" height="100px" width="100px"></a>
+                <a href="#"><img src="images/x.png" alt="Twitter" height="100px" width="100px"></a>
+                <a href="#"><img src="images/discord.png" alt="Discord" height="100px" width="100px"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.getElementById('menu');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

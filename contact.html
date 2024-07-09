@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MatchUp</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-section {
+            padding: 50px 20px;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .contact-section h1 {
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #ff6600;
+        }
+
+        .map-container {
+            margin-top: 40px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MatchUp</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact" class="contact-section">
+        <h1>Contact Us</h1>
+        <div class="contact-form">
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086335560271!2d-122.08424948549758!3d37.42206597982659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e5a1d91a27%3A0xe7b1a99d8c71192f!2sGoogleplex!5e0!3m2!1sen!2sus!4v1629302051121!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact">
+            <h2>CONTACT</h2>
+            <p>example@example.com</p>
+        </div>
+        <div class="follow">
+            <h2>FOLLOW</h2>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook" height="100px" width="100px"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram" height="100px" width="100px"></a>
+                <a href="#"><img src="images/x.png" alt="Twitter" height="100px" width="100px"></a>
+                <a href="#"><img src="images/discord.png" alt="Discord" height="100px" width="100px"></a>
+            </div>
+        </div>
+    </footer>
+<script src="scripts.js"></script>
+</body>
+</html>

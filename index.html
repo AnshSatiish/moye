@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+   <header>
         <nav>
             <div class="logo">MatchUp</div>
             <div class="menu-toggle" id="mobile-menu">
@@ -15,17 +15,16 @@
                 <span></span>
                 <span></span>
             </div>
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#coming-soon">Coming Soon</a></li>
-                <li><a href="#events">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="#partners">Partners</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        
     </header>
+
 
     <section id="home" class="hero">
         <video autoplay muted loop id="hero-video">
@@ -60,10 +59,10 @@
     <section id="partners" class="partners">
         <h2>OUR PARTNERS</h2>
         <div class="partner-logos">
-            <img src="images/nike.png" alt="Adidas" height="150px" width="300px">
-            <img src="images/miamor.png" alt="Adidas" height="250px" width="250px">
-            <img src="images/orange.png" alt="Adidas" height="250px" width="350px">
-            <img src="images/planrt.png" alt="Adidas" height="250px" width="350px">
+            <img src="images/nike.png" alt="Nike" height="150px" width="300px">
+            <img src="images/miamor.png" alt="Miamor" height="250px" width="250px">
+            <img src="images/orange.png" alt="Orange" height="250px" width="350px">
+            <img src="images/planrt.png" alt="Planrt" height="250px" width="350px">
         </div>
     </section>
 
@@ -76,13 +75,20 @@
             <h2>FOLLOW</h2>
             <div class="social-icons">
                 <a href="#"><img src="images/facebook.png" alt="Facebook" height="100px" width="100px"></a>
-                <a href="#"><img src="images/instagram.png" alt="Instagram" height="300px" width="2300px"></a>
-                <a href="#"><img src="images/x.png" alt="Twitter"></a>
-                <a href="#"><img src="images/discord.png" alt="Discord"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram" height="100px" width="100px"></a>
+                <a href="#"><img src="images/x.png" alt="Twitter" height="100px" width="100px"></a>
+                <a href="#"><img src="images/discord.png" alt="Discord" height="100px" width="100px"></a>
             </div>
         </div>
     </footer>
-
-    <script src="scripts.js"></script>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.getElementById('menu');
+    
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+    
 </body>
 </html>
